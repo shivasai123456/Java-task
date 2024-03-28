@@ -1,0 +1,26 @@
+public class University {
+    // Attributes
+    private String name;
+    private String location;
+    private int numberOfStudents;
+    private String[] coursesOffered;
+
+    // Constructor
+    public University(String name, String location, int numberOfStudents, String[] coursesOffered) {
+        this.name = name;
+        this.location = location;
+        this.numberOfStudents = numberOfStudents;
+        this.coursesOffered = coursesOffered;
+    }
+
+    // Behaviors
+    public void displayUniversityInfo() {
+        System.out.println("University Name: " + name);
+        System.out.println("Location: " + location);
+        System.out.println("Number of Students: " + numberOfStudents);
+        System.out.println("Courses Offered:");
+        for (String course : coursesOffered) {
+            System.out.println("- " + course);
+        }
+    }
+}
