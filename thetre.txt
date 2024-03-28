@@ -1,0 +1,25 @@
+public class Theatre {
+    // Attributes
+    private String name;
+    private String location;
+    private int numberOfSeats;
+
+    // Constructor
+    public Theatre(String name, String location, int numberOfSeats) {
+        this.name = name;
+        this.location = location;
+        this.numberOfSeats = numberOfSeats;
+    }
+
+    // Behaviors
+    public void displayTheatreInfo() {
+        System.out.println("Theatre Name: " + name);
+        System.out.println("Location: " + location);
+        System.out.println("Number of Seats: " + numberOfSeats);
+    }
+
+    public void bookTicket(int numberOfTickets) {
+        // Logic for booking tickets
+        // For example, reducing numberOfSeats by numberOfTickets
+    }
+}
